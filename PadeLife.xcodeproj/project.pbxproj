@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */; };
+		E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414E8BA28C0F82E00C76A9A /* ContentView.swift */; };
+		E414E8BD28C0F82F00C76A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E414E8BC28C0F82F00C76A9A /* Assets.xcassets */; };
+		E414E8C028C0F82F00C76A9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E414E8BF28C0F82F00C76A9A /* Preview Assets.xcassets */; };
+		E414E8CA28C0F82F00C76A9A /* PadeLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414E8C928C0F82F00C76A9A /* PadeLifeTests.swift */; };
+		E414E8D428C0F82F00C76A9A /* PadeLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414E8D328C0F82F00C76A9A /* PadeLifeUITests.swift */; };
+		E414E8D628C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414E8D528C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E414E8C628C0F82F00C76A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E414E8AD28C0F82E00C76A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E414E8B428C0F82E00C76A9A;
+			remoteInfo = PadeLife;
+		};
+		E414E8D028C0F82F00C76A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E414E8AD28C0F82E00C76A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E414E8B428C0F82E00C76A9A;
+			remoteInfo = PadeLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E414E8B528C0F82E00C76A9A /* PadeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PadeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeApp.swift; sourceTree = "<group>"; };
+		E414E8BA28C0F82E00C76A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E414E8BC28C0F82F00C76A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E414E8BF28C0F82F00C76A9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E414E8C528C0F82F00C76A9A /* PadeLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadeLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E414E8C928C0F82F00C76A9A /* PadeLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeTests.swift; sourceTree = "<group>"; };
+		E414E8CF28C0F82F00C76A9A /* PadeLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadeLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E414E8D328C0F82F00C76A9A /* PadeLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeUITests.swift; sourceTree = "<group>"; };
+		E414E8D528C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E414E8B228C0F82E00C76A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8C228C0F82F00C76A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8CC28C0F82F00C76A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E414E8AC28C0F82E00C76A9A = {
+			isa = PBXGroup;
+			children = (
+				E414E8B728C0F82E00C76A9A /* PadeLife */,
+				E414E8C828C0F82F00C76A9A /* PadeLifeTests */,
+				E414E8D228C0F82F00C76A9A /* PadeLifeUITests */,
+				E414E8B628C0F82E00C76A9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E414E8B628C0F82E00C76A9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E414E8B528C0F82E00C76A9A /* PadeLife.app */,
+				E414E8C528C0F82F00C76A9A /* PadeLifeTests.xctest */,
+				E414E8CF28C0F82F00C76A9A /* PadeLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E414E8B728C0F82E00C76A9A /* PadeLife */ = {
+			isa = PBXGroup;
+			children = (
+				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
+				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
+				E414E8BC28C0F82F00C76A9A /* Assets.xcassets */,
+				E414E8BE28C0F82F00C76A9A /* Preview Content */,
+			);
+			path = PadeLife;
+			sourceTree = "<group>";
+		};
+		E414E8BE28C0F82F00C76A9A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E414E8BF28C0F82F00C76A9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E414E8C828C0F82F00C76A9A /* PadeLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E414E8C928C0F82F00C76A9A /* PadeLifeTests.swift */,
+			);
+			path = PadeLifeTests;
+			sourceTree = "<group>";
+		};
+		E414E8D228C0F82F00C76A9A /* PadeLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E414E8D328C0F82F00C76A9A /* PadeLifeUITests.swift */,
+				E414E8D528C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift */,
+			);
+			path = PadeLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E414E8B428C0F82E00C76A9A /* PadeLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E414E8D928C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLife" */;
+			buildPhases = (
+				E414E8B128C0F82E00C76A9A /* Sources */,
+				E414E8B228C0F82E00C76A9A /* Frameworks */,
+				E414E8B328C0F82E00C76A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PadeLife;
+			productName = PadeLife;
+			productReference = E414E8B528C0F82E00C76A9A /* PadeLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E414E8C428C0F82F00C76A9A /* PadeLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E414E8DC28C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLifeTests" */;
+			buildPhases = (
+				E414E8C128C0F82F00C76A9A /* Sources */,
+				E414E8C228C0F82F00C76A9A /* Frameworks */,
+				E414E8C328C0F82F00C76A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E414E8C728C0F82F00C76A9A /* PBXTargetDependency */,
+			);
+			name = PadeLifeTests;
+			productName = PadeLifeTests;
+			productReference = E414E8C528C0F82F00C76A9A /* PadeLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E414E8CE28C0F82F00C76A9A /* PadeLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E414E8DF28C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLifeUITests" */;
+			buildPhases = (
+				E414E8CB28C0F82F00C76A9A /* Sources */,
+				E414E8CC28C0F82F00C76A9A /* Frameworks */,
+				E414E8CD28C0F82F00C76A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E414E8D128C0F82F00C76A9A /* PBXTargetDependency */,
+			);
+			name = PadeLifeUITests;
+			productName = PadeLifeUITests;
+			productReference = E414E8CF28C0F82F00C76A9A /* PadeLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E414E8AD28C0F82E00C76A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					E414E8B428C0F82E00C76A9A = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E414E8C428C0F82F00C76A9A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = E414E8B428C0F82E00C76A9A;
+					};
+					E414E8CE28C0F82F00C76A9A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = E414E8B428C0F82E00C76A9A;
+					};
+				};
+			};
+			buildConfigurationList = E414E8B028C0F82E00C76A9A /* Build configuration list for PBXProject "PadeLife" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E414E8AC28C0F82E00C76A9A;
+			productRefGroup = E414E8B628C0F82E00C76A9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E414E8B428C0F82E00C76A9A /* PadeLife */,
+				E414E8C428C0F82F00C76A9A /* PadeLifeTests */,
+				E414E8CE28C0F82F00C76A9A /* PadeLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E414E8B328C0F82E00C76A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E414E8C028C0F82F00C76A9A /* Preview Assets.xcassets in Resources */,
+				E414E8BD28C0F82F00C76A9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8C328C0F82F00C76A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8CD28C0F82F00C76A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E414E8B128C0F82E00C76A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
+				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8C128C0F82F00C76A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E414E8CA28C0F82F00C76A9A /* PadeLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E414E8CB28C0F82F00C76A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E414E8D628C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift in Sources */,
+				E414E8D428C0F82F00C76A9A /* PadeLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E414E8C728C0F82F00C76A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E414E8B428C0F82E00C76A9A /* PadeLife */;
+			targetProxy = E414E8C628C0F82F00C76A9A /* PBXContainerItemProxy */;
+		};
+		E414E8D128C0F82F00C76A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E414E8B428C0F82E00C76A9A /* PadeLife */;
+			targetProxy = E414E8D028C0F82F00C76A9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E414E8D728C0F82F00C76A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E414E8D828C0F82F00C76A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E414E8DA28C0F82F00C76A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PadeLife/Preview Content\"";
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E414E8DB28C0F82F00C76A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PadeLife/Preview Content\"";
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E414E8DD28C0F82F00C76A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PadeLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PadeLife";
+			};
+			name = Debug;
+		};
+		E414E8DE28C0F82F00C76A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PadeLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PadeLife";
+			};
+			name = Release;
+		};
+		E414E8E028C0F82F00C76A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PadeLife;
+			};
+			name = Debug;
+		};
+		E414E8E128C0F82F00C76A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PadeLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E414E8B028C0F82E00C76A9A /* Build configuration list for PBXProject "PadeLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E414E8D728C0F82F00C76A9A /* Debug */,
+				E414E8D828C0F82F00C76A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E414E8D928C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E414E8DA28C0F82F00C76A9A /* Debug */,
+				E414E8DB28C0F82F00C76A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E414E8DC28C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E414E8DD28C0F82F00C76A9A /* Debug */,
+				E414E8DE28C0F82F00C76A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E414E8DF28C0F82F00C76A9A /* Build configuration list for PBXNativeTarget "PadeLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E414E8E028C0F82F00C76A9A /* Debug */,
+				E414E8E128C0F82F00C76A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E414E8AD28C0F82E00C76A9A /* Project object */;
+}
