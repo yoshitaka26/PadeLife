@@ -62,7 +62,7 @@ extension PadelSubject {
             "email": userEmail,
             "name": "ゲスト",
             "gender": nil,
-            "imageUrl": nil,
+            "image": nil,
             "profile": ""
         ]) { err in
             if let err = err {
