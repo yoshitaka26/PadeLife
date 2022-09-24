@@ -25,6 +25,7 @@
 		E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4B28DE8DE200668A20 /* AccountScreen.swift */; };
 		E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */; };
 		E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */; };
+		E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5228DE94FA00668A20 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E4599D4B28DE8DE200668A20 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		E4599D5228DE94FA00668A20 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
+				E4599D5128DE94DD00668A20 /* Common */,
 				E4599D4828DE8D8B00668A20 /* Search */,
 				E4599D4928DE8DA200668A20 /* Dashboard */,
 				E4599D4A28DE8DAB00668A20 /* Account */,
@@ -175,6 +178,14 @@
 				E4599D4B28DE8DE200668A20 /* AccountScreen.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		E4599D5128DE94DD00668A20 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D5228DE94FA00668A20 /* ScheduleView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 				E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */,
 				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
+				E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
