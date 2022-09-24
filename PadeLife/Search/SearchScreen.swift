@@ -11,8 +11,8 @@ struct SearchScreen: View {
     var pLSchedules: [PLSchedule] = [mockPLSchedule, mockPLSchedule]
     var body: some View {
         NavigationStack {
-            List(pLSchedules, id: \.id) { schedule in
-                ScheduleView(plSchedule: schedule)
+            List(pLSchedules) { schedule in
+                ScheduleListItemView(plSchedule: schedule)
             }
             .listStyle(.inset)
             .listRowSeparator(.hidden)

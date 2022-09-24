@@ -25,10 +25,11 @@
 		E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4B28DE8DE200668A20 /* AccountScreen.swift */; };
 		E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */; };
 		E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */; };
-		E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5228DE94FA00668A20 /* ScheduleView.swift */; };
+		E4599D5328DE94FA00668A20 /* ScheduleListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5228DE94FA00668A20 /* ScheduleListItemView.swift */; };
 		E4599D5628DE9BA600668A20 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5528DE9BA600668A20 /* Schedule.swift */; };
 		E4599D5928DEA4A100668A20 /* PadelLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5828DEA4A100668A20 /* PadelLevel.swift */; };
 		E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */; };
+		E4599D5E28DEC74D00668A20 /* ScheduleListItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5D28DEC74D00668A20 /* ScheduleListItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,11 @@
 		E4599D4B28DE8DE200668A20 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
-		E4599D5228DE94FA00668A20 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		E4599D5228DE94FA00668A20 /* ScheduleListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListItemView.swift; sourceTree = "<group>"; };
 		E4599D5528DE9BA600668A20 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		E4599D5828DEA4A100668A20 /* PadelLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelLevel.swift; sourceTree = "<group>"; };
 		E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStatus.swift; sourceTree = "<group>"; };
+		E4599D5D28DEC74D00668A20 /* ScheduleListItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */,
+				E4599D5C28DEC6C800668A20 /* Components */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -191,7 +194,7 @@
 		E4599D5128DE94DD00668A20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E4599D5228DE94FA00668A20 /* ScheduleView.swift */,
+				E4599D5D28DEC74D00668A20 /* ScheduleListItemDetailView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -211,6 +214,14 @@
 				E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */,
 			);
 			path = enum;
+			sourceTree = "<group>";
+		};
+		E4599D5C28DEC6C800668A20 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D5228DE94FA00668A20 /* ScheduleListItemView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +374,8 @@
 				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
 				E4599D5628DE9BA600668A20 /* Schedule.swift in Sources */,
-				E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */,
+				E4599D5328DE94FA00668A20 /* ScheduleListItemView.swift in Sources */,
+				E4599D5E28DEC74D00668A20 /* ScheduleListItemDetailView.swift in Sources */,
 				E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
