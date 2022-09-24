@@ -8,51 +8,57 @@
 import SwiftUI
 
 struct RegisterScreen: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @ObservedObject var authSubject: AuthSubject
+    @Environment(\.dismiss) var dismiss: DismissAction
     var body: some View {
-        VStack {
-            Group {
-                TextField(
-                    "Email",
-                    text: $email)
-                .autocapitalization(.none)
-                .disableAutocorrection(true)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.secondary, lineWidth: 1)
-                )
-                SecureField(
-                    "Password",
-                    text: $password
-                ) {
-                    // handleLogin(username: username, password: password)
-                }
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.secondary, lineWidth: 1)
-                )
-            }
-            Button {
-                // アカウント作成処理
-            } label: {
-                Text("アカウント作成")
-                    .bold()
-                    .frame(width: 200, height: 40)
-                    .foregroundColor(Color.black)
+        ZStack {
+            VStack {
+                Group {
+                    TextField(
+                        "Email",
+                        text: $authSubject.email)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.secondary, lineWidth: 2)
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.secondary, lineWidth: 1)
                     )
+                    SecureField(
+                        "Password",
+                        text: $authSubject.password
+                    ) {
+                        authSubject.createUser()
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.secondary, lineWidth: 1)
+                    )
+                }
+                Button {
+                    Task {
+                        authSubject.createUser()
+                    }
+                } label: {
+                    Text("アカウント作成")
+                        .defaultButtonText()
+                }
+                .padding(.top, 50)
             }
-            .padding(.top, 20)
+            .padding(30)
         }
-        .padding(30)
+        .alert(authSubject.error?.localizedDescription ?? "", isPresented: $authSubject.didError, presenting: authSubject.error) { _ in
+            Button("キャンセル", role: .cancel) {
+                dismiss.callAsFunction()
+            }
+        }
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle())
+            .isHidden(!authSubject.isLoading)
     }
 }
 
 struct RegisterScreen_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterScreen()
+        RegisterScreen(authSubject: AuthSubject())
     }
 }

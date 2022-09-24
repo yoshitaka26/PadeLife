@@ -33,6 +33,8 @@
 		E4599D6028DED4E200668A20 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5F28DED4E200668A20 /* LoginScreen.swift */; };
 		E4599D6228DED4F100668A20 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6128DED4F100668A20 /* RegisterScreen.swift */; };
 		E4599D6428DEDEED00668A20 /* PLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6328DEDEED00668A20 /* PLUser.swift */; };
+		E4599D6728DEE7DA00668A20 /* AuthSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6628DEE7DA00668A20 /* AuthSubject.swift */; };
+		E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6928DF1D1600668A20 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		E4599D5F28DED4E200668A20 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E4599D6128DED4F100668A20 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		E4599D6328DEDEED00668A20 /* PLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLUser.swift; sourceTree = "<group>"; };
+		E4599D6628DEE7DA00668A20 /* AuthSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSubject.swift; sourceTree = "<group>"; };
+		E4599D6928DF1D1600668A20 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +136,12 @@
 		E414E8B728C0F82E00C76A9A /* PadeLife */ = {
 			isa = PBXGroup;
 			children = (
+				E4599D6828DF1CF200668A20 /* Extension */,
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
+				E4599D6528DEE7B500668A20 /* ObservableObject */,
 				E4599D5728DEA47C00668A20 /* enum */,
-				E4599D5428DE9B9400668A20 /*  Entity */,
+				E4599D5428DE9B9400668A20 /* Entity */,
 				E4599D5128DE94DD00668A20 /* Common */,
 				E4599D4828DE8D8B00668A20 /* Search */,
 				E4599D4928DE8DA200668A20 /* Dashboard */,
@@ -207,13 +213,13 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		E4599D5428DE9B9400668A20 /*  Entity */ = {
+		E4599D5428DE9B9400668A20 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				E4599D6328DEDEED00668A20 /* PLUser.swift */,
 				E4599D5528DE9BA600668A20 /* PLSchedule.swift */,
 			);
-			path = " Entity";
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		E4599D5728DEA47C00668A20 /* enum */ = {
@@ -231,6 +237,22 @@
 				E4599D5228DE94FA00668A20 /* ScheduleListItemView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E4599D6528DEE7B500668A20 /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D6628DEE7DA00668A20 /* AuthSubject.swift */,
+			);
+			path = ObservableObject;
+			sourceTree = "<group>";
+		};
+		E4599D6828DF1CF200668A20 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D6928DF1D1600668A20 /* ViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,9 +407,11 @@
 				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
 				E4599D5628DE9BA600668A20 /* PLSchedule.swift in Sources */,
+				E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */,
 				E4599D5328DE94FA00668A20 /* ScheduleListItemView.swift in Sources */,
 				E4599D5E28DEC74D00668A20 /* ScheduleListItemDetailView.swift in Sources */,
 				E4599D6028DED4E200668A20 /* LoginScreen.swift in Sources */,
+				E4599D6728DEE7DA00668A20 /* AuthSubject.swift in Sources */,
 				E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

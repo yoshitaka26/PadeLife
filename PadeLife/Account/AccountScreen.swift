@@ -8,37 +8,52 @@
 import SwiftUI
 
 struct AccountScreen: View {
-    @State private var isLogin: Bool = true
+    @StateObject private var authSubject = AuthSubject()
     var user: PLUser = mockUser
     var body: some View {
         NavigationStack {
-            if isLogin {
-                VStack {
-                    if let imageUrl = user.imageUrl {
-                        AsyncImage(url: URL(string: imageUrl)) { image in
-                            image
+            if authSubject.isLogin {
+                ZStack {
+                    VStack {
+                        if let imageUrl = user.imageUrl {
+                            AsyncImage(url: URL(string: imageUrl)) { image in
+                                image
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .scaledToFit()
+                                
+                            } placeholder: {
+                                ProgressView()
+                            }
+                        } else {
+                            Image(systemName: "person.crop.circle.fill")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .scaledToFit()
-                            
-                        } placeholder: {
-                            ProgressView()
+                                .foregroundColor(.secondary)
                         }
-                    } else {
-                        Image(systemName: "person.crop.circle.fill")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .scaledToFit()
-                            .foregroundColor(.secondary)
+                        Text(user.name)
+                        Text(user.genderValueString)
+                        Text(user.profile)
+                        Button {
+                            authSubject.signOut()
+                        } label: {
+                            Text("ログアウト")
+                                .defaultButtonText()
+                        }
+                        .padding(.top, 20)
                     }
-                    Text(user.name)
-                    Text(user.genderValueString)
-                    Text(user.profile)
+                    .font(.headline)
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .isHidden(!authSubject.isLoading)
                 }
-                .font(.headline)
             } else {
-                LoginScreen()
+                LoginScreen(authSubject: authSubject)
             }
+        }
+        .task {
+            authSubject.checkLoginState()
         }
     }
 }
