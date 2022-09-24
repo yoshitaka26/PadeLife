@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct SearchScreen: View {
+    var pLSchedules: [PLSchedule] = [mockPLSchedule, mockPLSchedule]
     var body: some View {
-        Text("検索画面")
+        NavigationStack {
+            List(pLSchedules, id: \.id) { schedule in
+                ScheduleView(plSchedule: schedule)
+            }
+            .listStyle(.inset)
+            .listRowSeparator(.hidden)
+        }
     }
 }
 

@@ -26,6 +26,9 @@
 		E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */; };
 		E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */; };
 		E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5228DE94FA00668A20 /* ScheduleView.swift */; };
+		E4599D5628DE9BA600668A20 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5528DE9BA600668A20 /* Schedule.swift */; };
+		E4599D5928DEA4A100668A20 /* PadelLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5828DEA4A100668A20 /* PadelLevel.swift */; };
+		E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		E4599D5228DE94FA00668A20 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		E4599D5528DE9BA600668A20 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		E4599D5828DEA4A100668A20 /* PadelLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelLevel.swift; sourceTree = "<group>"; };
+		E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,8 @@
 			children = (
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
+				E4599D5728DEA47C00668A20 /* enum */,
+				E4599D5428DE9B9400668A20 /*  Entity */,
 				E4599D5128DE94DD00668A20 /* Common */,
 				E4599D4828DE8D8B00668A20 /* Search */,
 				E4599D4928DE8DA200668A20 /* Dashboard */,
@@ -186,6 +194,23 @@
 				E4599D5228DE94FA00668A20 /* ScheduleView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E4599D5428DE9B9400668A20 /*  Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D5528DE9BA600668A20 /* Schedule.swift */,
+			);
+			path = " Entity";
+			sourceTree = "<group>";
+		};
+		E4599D5728DEA47C00668A20 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D5828DEA4A100668A20 /* PadelLevel.swift */,
+				E4599D5A28DEA68200668A20 /* ScheduleStatus.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,11 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */,
+				E4599D5928DEA4A100668A20 /* PadelLevel.swift in Sources */,
 				E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */,
 				E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */,
 				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
+				E4599D5628DE9BA600668A20 /* Schedule.swift in Sources */,
 				E4599D5328DE94FA00668A20 /* ScheduleView.swift in Sources */,
+				E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
