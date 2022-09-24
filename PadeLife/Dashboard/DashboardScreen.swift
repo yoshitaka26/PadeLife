@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DashboardScreen: View {
+    @State private var createSchedule: Bool = false
     enum DashboardDestination {
         case organized
         case reserved
@@ -15,21 +16,45 @@ struct DashboardScreen: View {
     }
     var body: some View {
         NavigationStack {
-            List {
-                Section("主催") {
-                    NavigationLink(value: DashboardDestination.organized) {
-                        ScheduleListItemDetailView(plSchedule: mockPLSchedule)
+            ZStack(alignment: .bottomTrailing) {
+                List {
+                    Section("主催") {
+                        NavigationLink(value: DashboardDestination.organized) {
+                            ScheduleListItemDetailView(plSchedule: mockPLSchedule)
+                        }
+                    }
+                    Section("参加中") {
+                        NavigationLink(value: DashboardDestination.reserved) {
+                            ScheduleListItemDetailView(plSchedule: mockPLSchedule)
+                        }
+                    }
+                    Section("フォロー中") {
+                        NavigationLink(value: DashboardDestination.reserved) {
+                            ScheduleListItemDetailView(plSchedule: mockPLSchedule)
+                        }
                     }
                 }
-                Section("参加中") {
-                    NavigationLink(value: DashboardDestination.reserved) {
-                        ScheduleListItemDetailView(plSchedule: mockPLSchedule)
-                    }
+                Button {
+                    createSchedule = true
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .padding(.horizontal, 30)
+                        .foregroundColor(.secondary)
                 }
-                Section("フォロー中") {
-                    NavigationLink(value: DashboardDestination.reserved) {
-                        ScheduleListItemDetailView(plSchedule: mockPLSchedule)
-                    }
+            }
+            .navigationDestination(isPresented: $createSchedule, destination: {
+                Text("開発中")
+            })
+            .navigationDestination(for: DashboardDestination.self) { destination in
+                switch destination {
+                case .organized:
+                    Text("開発中")
+                case .reserved:
+                    Text("開発中")
+                case .followed:
+                    Text("開発中")
                 }
             }
         }
