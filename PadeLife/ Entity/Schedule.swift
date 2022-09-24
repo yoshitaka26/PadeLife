@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PLSchedule {
+struct PLSchedule: Identifiable {
     let id: UUID
     let place: String
     let date: String
