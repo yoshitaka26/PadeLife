@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tabSelection: TabOption = .Dashboard
+    enum TabOption {
+        case Search
+        case Dashboard
+        case Account
+    }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $tabSelection) {
+            SearchScreen()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("さがす")
+                }
+            DashboardScreen()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("ダッシュボード")
+                }
+            AccountScreen()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("アカウント")
+                }
         }
     }
 }

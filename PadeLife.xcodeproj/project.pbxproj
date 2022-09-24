@@ -22,6 +22,9 @@
 		E44851AA28C0FCF8003DE438 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E44851A928C0FCF8003DE438 /* FirebaseFirestoreSwift */; };
 		E44851AC28C0FCF8003DE438 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = E44851AB28C0FCF8003DE438 /* FirebaseFunctions */; };
 		E44851AE28C0FCF8003DE438 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E44851AD28C0FCF8003DE438 /* FirebaseRemoteConfigSwift */; };
+		E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4B28DE8DE200668A20 /* AccountScreen.swift */; };
+		E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */; };
+		E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		E414E8D328C0F82F00C76A9A /* PadeLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeUITests.swift; sourceTree = "<group>"; };
 		E414E8D528C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4599D4B28DE8DE200668A20 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 			children = (
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
+				E4599D4828DE8D8B00668A20 /* Search */,
+				E4599D4928DE8DA200668A20 /* Dashboard */,
+				E4599D4A28DE8DAB00668A20 /* Account */,
 				E414E8BC28C0F82F00C76A9A /* Assets.xcassets */,
 				E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */,
 				E414E8BE28C0F82F00C76A9A /* Preview Content */,
@@ -142,6 +151,30 @@
 				E414E8D528C0F82F00C76A9A /* PadeLifeUITestsLaunchTests.swift */,
 			);
 			path = PadeLifeUITests;
+			sourceTree = "<group>";
+		};
+		E4599D4828DE8D8B00668A20 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D4F28DE8DFB00668A20 /* SearchScreen.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E4599D4928DE8DA200668A20 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E4599D4A28DE8DAB00668A20 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D4B28DE8DE200668A20 /* AccountScreen.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */,
+				E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */,
+				E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */,
 				E414E8BB28C0F82E00C76A9A /* ContentView.swift in Sources */,
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
 			);
