@@ -41,7 +41,7 @@ struct AccountScreen: View {
                             Text("ログアウト")
                                 .defaultButtonText()
                         }
-                        .padding(.top, 20)
+                        .padding(.top, 100)
                     }
                     .font(.headline)
                     ProgressView()

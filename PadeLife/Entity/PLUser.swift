@@ -8,11 +8,21 @@
 import Foundation
 
 struct PLUser {
-    let id: UUID
+    let id: String
+    let email: String
     let name: String
     let gender: Bool?
     let imageUrl: String?
     let profile: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case email
+        case name
+        case gender
+        case imageUrl = "image"
+        case profile
+    }
     
     var genderValueString: String {
         switch gender {
@@ -29,7 +39,8 @@ struct PLUser {
 }
 
 let mockUser = PLUser(
-    id: UUID(),
+    id: "0001",
+    email: "dummy@dummy.com",
     name: "パデラー",
     gender: true,
     imageUrl: nil,

@@ -11,33 +11,46 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class AuthSubject: ObservableObject {
-    @AppStorage("isLogin") var isLogin: Bool = false
+    @AppStorage("userId") var userId: String = ""
+    @AppStorage("userEmail") var userEmail: String = ""
     
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var isLoading: Bool = false
     @Published var didError: Bool = false
     @Published var error: Error? = nil
+    
+    var isLogin: Bool {
+        !userId.isEmpty
+    }
+    
+    func makeEmptyTextField() {
+        email = ""
+        password = ""
+    }
 }
 
 extension AuthSubject {
     func checkLoginState() {
-        if Auth.auth().currentUser != nil {
-          isLogin = true
+        if let user = Auth.auth().currentUser {
+            userId = user.uid
         } else {
-          isLogin = false
+            userId = ""
+            email = userEmail
+            password = ""
         }
     }
     
     func createUser() {
         isLoading = true
-        Auth.auth().createUser(withEmail: email, password: password) {  [weak self] authResult, error in
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
             guard let self = self else { return }
             self.isLoading = false
             self.error = error
             if error == nil {
                 self.isLoading = false
-                self.isLogin = true
+                self.userId = Auth.auth().currentUser?.uid ?? ""
+                self.userEmail = self.email
             } else {
                 self.isLoading = false
                 self.didError = true
@@ -52,7 +65,8 @@ extension AuthSubject {
             self.isLoading = false
             self.error = error
             if error == nil {
-                self.isLogin = true
+                self.userId = Auth.auth().currentUser?.uid ?? ""
+                self.userEmail = self.email
             } else {
                 self.didError = true
             }
@@ -64,7 +78,8 @@ extension AuthSubject {
         do {
             isLoading = true
             try firebaseAuth.signOut()
-            isLogin = false
+            userId = ""
+            password = ""
             isLoading = false
         } catch let signOutError as NSError {
             isLoading = false

@@ -51,6 +51,9 @@ struct RegisterScreen: View {
                 dismiss.callAsFunction()
             }
         }
+        .task {
+            authSubject.makeEmptyTextField()
+        }
         ProgressView()
             .progressViewStyle(CircularProgressViewStyle())
             .isHidden(!authSubject.isLoading)

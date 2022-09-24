@@ -35,6 +35,7 @@
 		E4599D6428DEDEED00668A20 /* PLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6328DEDEED00668A20 /* PLUser.swift */; };
 		E4599D6728DEE7DA00668A20 /* AuthSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6628DEE7DA00668A20 /* AuthSubject.swift */; };
 		E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6928DF1D1600668A20 /* ViewExtension.swift */; };
+		E4599D6C28DF45AC00668A20 /* PadelSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6B28DF45AC00668A20 /* PadelSubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		E4599D6328DEDEED00668A20 /* PLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLUser.swift; sourceTree = "<group>"; };
 		E4599D6628DEE7DA00668A20 /* AuthSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSubject.swift; sourceTree = "<group>"; };
 		E4599D6928DF1D1600668A20 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		E4599D6B28DF45AC00668A20 /* PadelSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelSubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				E4599D6628DEE7DA00668A20 /* AuthSubject.swift */,
+				E4599D6B28DF45AC00668A20 /* PadelSubject.swift */,
 			);
 			path = ObservableObject;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				E4599D6428DEDEED00668A20 /* PLUser.swift in Sources */,
 				E4599D6228DED4F100668A20 /* RegisterScreen.swift in Sources */,
 				E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */,
+				E4599D6C28DF45AC00668A20 /* PadelSubject.swift in Sources */,
 				E4599D5928DEA4A100668A20 /* PadelLevel.swift in Sources */,
 				E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */,
 				E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */,

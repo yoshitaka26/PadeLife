@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DashboardScreen: View {
+    @StateObject private var padelSubject = PadelSubject()
     @State private var createSchedule: Bool = false
     enum DashboardDestination {
         case organized
@@ -61,6 +62,9 @@ struct DashboardScreen: View {
                 case .followed:
                     Text("開発中")
                 }
+            }
+            .task {
+                padelSubject.fetchUserData()
             }
         }
     }
