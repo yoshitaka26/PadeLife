@@ -1,5 +1,5 @@
 //
-//  Schedule.swift
+//  PLSchedule.swift
 //  PadeLife
 //
 //  Created by Yoshitaka Tanaka on 2022/09/24.

@@ -16,7 +16,7 @@ struct DashboardScreen: View {
     }
     var body: some View {
         NavigationStack {
-            ZStack(alignment: .bottomTrailing) {
+            ZStack(alignment: .bottom) {
                 List {
                     Section("主催") {
                         NavigationLink(value: DashboardDestination.organized) {
@@ -37,11 +37,16 @@ struct DashboardScreen: View {
                 Button {
                     createSchedule = true
                 } label: {
-                    Image(systemName: "plus.circle")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .padding(.horizontal, 30)
-                        .foregroundColor(.secondary)
+                    Label {
+                        Text("主催イベント作成")
+                            .bold()
+                    } icon: {
+                        Image(systemName: "plus.circle")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    .padding(.bottom, 20)
+                    .foregroundColor(.secondary)
                 }
             }
             .navigationDestination(isPresented: $createSchedule, destination: {
