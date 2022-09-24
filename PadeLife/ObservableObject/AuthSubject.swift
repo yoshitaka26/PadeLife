@@ -18,7 +18,6 @@ class AuthSubject: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var didError: Bool = false
     @Published var error: Error? = nil
-    
 }
 
 extension AuthSubject {
@@ -42,7 +41,6 @@ extension AuthSubject {
             } else {
                 self.isLoading = false
                 self.didError = true
-                debugPrint(error.debugDescription)
             }
         }
     }
@@ -57,7 +55,6 @@ extension AuthSubject {
                 self.isLogin = true
             } else {
                 self.didError = true
-                debugPrint(error.debugDescription)
             }
         }
     }
@@ -73,7 +70,6 @@ extension AuthSubject {
             isLoading = false
             self.error = signOutError
             self.didError = true
-            print("Error signing out: %@", signOutError)
         }
     }
     
@@ -82,8 +78,12 @@ extension AuthSubject {
         Auth.auth().sendPasswordReset(withEmail: email) { [weak self] error in
             guard let self = self else { return }
             self.isLoading = false
-            self.error = error
-            self.didError = true
+            if error == nil {
+                self.isLoading = false
+            } else {
+                self.error = error
+                self.didError = true
+            }
         }
     }
 }

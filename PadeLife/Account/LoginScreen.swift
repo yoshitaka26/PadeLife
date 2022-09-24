@@ -68,7 +68,7 @@ struct LoginScreen: View {
                 RegisterScreen(authSubject: authSubject)
             }
             .alert(authSubject.error?.localizedDescription ?? "", isPresented: $authSubject.didError, presenting: authSubject.error) { _ in
-                Button("キャンセル", role: .cancel) {
+                Button("OK", role: .cancel) {
                     dismiss.callAsFunction()
                 }
             }

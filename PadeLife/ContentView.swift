@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var tabSelection: TabOption = .Dashboard
+    @State private var tabSelection: TabOption = .dashboard
     enum TabOption {
-        case Search
-        case Dashboard
-        case Account
+        case search
+        case dashboard
+        case account
     }
     var body: some View {
         TabView(selection: $tabSelection) {
@@ -21,16 +21,19 @@ struct ContentView: View {
                     Image(systemName: "magnifyingglass")
                     Text("さがす")
                 }
+                .tag(TabOption.search)
             DashboardScreen()
                 .tabItem {
                     Image(systemName: "house")
                     Text("ダッシュボード")
                 }
+                .tag(TabOption.dashboard)
             AccountScreen()
                 .tabItem {
                     Image(systemName: "person")
                     Text("アカウント")
                 }
+                .tag(TabOption.account)
         }
     }
 }
