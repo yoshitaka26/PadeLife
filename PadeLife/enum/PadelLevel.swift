@@ -7,12 +7,14 @@
 
 import Foundation
 
-enum PadelLevel: Int {
+enum PadelLevel: Int, CaseIterable, Identifiable {
     case beginner
     case intermediate
     case advanced
     case proficiency
     case none
+    
+    var id: Int { rawValue }
     
     var stringValue: String {
         switch self {

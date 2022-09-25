@@ -7,11 +7,13 @@
 
 import Foundation
 
-enum ScheduleStatus: Int {
+enum ScheduleStatus: Int, CaseIterable, Identifiable {
     case planed
     case reserved
     case canceled
     case none
+    
+    var id: Int { rawValue }
     
     var stringValue: String {
         switch self {

@@ -36,6 +36,7 @@
 		E4599D6728DEE7DA00668A20 /* AuthSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6628DEE7DA00668A20 /* AuthSubject.swift */; };
 		E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6928DF1D1600668A20 /* ViewExtension.swift */; };
 		E4599D6C28DF45AC00668A20 /* PadelSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6B28DF45AC00668A20 /* PadelSubject.swift */; };
+		E4599D6E28E097AF00668A20 /* CreateScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6D28E097AF00668A20 /* CreateScheduleScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		E4599D6628DEE7DA00668A20 /* AuthSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSubject.swift; sourceTree = "<group>"; };
 		E4599D6928DF1D1600668A20 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		E4599D6B28DF45AC00668A20 /* PadelSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelSubject.swift; sourceTree = "<group>"; };
+		E4599D6D28E097AF00668A20 /* CreateScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E4599D4D28DE8DF000668A20 /* DashboardScreen.swift */,
+				E4599D6D28E097AF00668A20 /* CreateScheduleScreen.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				E4599D5E28DEC74D00668A20 /* ScheduleListItemDetailView.swift in Sources */,
 				E4599D6028DED4E200668A20 /* LoginScreen.swift in Sources */,
 				E4599D6728DEE7DA00668A20 /* AuthSubject.swift in Sources */,
+				E4599D6E28E097AF00668A20 /* CreateScheduleScreen.swift in Sources */,
 				E4599D5B28DEA68200668A20 /* ScheduleStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

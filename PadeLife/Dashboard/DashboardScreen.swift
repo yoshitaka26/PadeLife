@@ -51,7 +51,7 @@ struct DashboardScreen: View {
                 }
             }
             .navigationDestination(isPresented: $createSchedule, destination: {
-                Text("開発中")
+                CreateScheduleScreen()
             })
             .navigationDestination(for: DashboardDestination.self) { destination in
                 switch destination {
