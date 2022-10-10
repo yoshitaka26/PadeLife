@@ -27,3 +27,13 @@ extension View {
             )
     }
 }
+
+extension View {
+    func customAlert(alertSubject: AlertSubject) -> some View {
+        modifier(AlertView(alertSubject: alertSubject))
+    }
+
+    func customToast(toastSubject: ToastSubject) -> some View {
+        modifier(ToastAlertView(toastSubject: toastSubject))
+    }
+}

@@ -37,6 +37,11 @@
 		E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6928DF1D1600668A20 /* ViewExtension.swift */; };
 		E4599D6C28DF45AC00668A20 /* PadelSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6B28DF45AC00668A20 /* PadelSubject.swift */; };
 		E4599D6E28E097AF00668A20 /* CreateScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D6D28E097AF00668A20 /* CreateScheduleScreen.swift */; };
+		E4599D7628F43CA500668A20 /* AlertSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7528F43CA500668A20 /* AlertSubject.swift */; };
+		E4599D7928F444B100668A20 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7828F444B100668A20 /* AlertView.swift */; };
+		E4599D7C28F445D000668A20 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = E4599D7B28F445D000668A20 /* PopupView */; };
+		E4599D7E28F4474D00668A20 /* ToastAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7D28F4474D00668A20 /* ToastAlertView.swift */; };
+		E4599D8028F44D2300668A20 /* ToastSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7F28F44D2300668A20 /* ToastSubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,10 @@
 		E4599D6928DF1D1600668A20 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		E4599D6B28DF45AC00668A20 /* PadelSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelSubject.swift; sourceTree = "<group>"; };
 		E4599D6D28E097AF00668A20 /* CreateScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleScreen.swift; sourceTree = "<group>"; };
+		E4599D7528F43CA500668A20 /* AlertSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSubject.swift; sourceTree = "<group>"; };
+		E4599D7828F444B100668A20 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		E4599D7D28F4474D00668A20 /* ToastAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAlertView.swift; sourceTree = "<group>"; };
+		E4599D7F28F44D2300668A20 /* ToastSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastSubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4599D7C28F445D000668A20 /* PopupView in Frameworks */,
 				E44851AA28C0FCF8003DE438 /* FirebaseFirestoreSwift in Frameworks */,
 				E44851A828C0FCF8003DE438 /* FirebaseDatabaseSwift in Frameworks */,
 				E44851A628C0FCF8003DE438 /* FirebaseCrashlytics in Frameworks */,
@@ -140,16 +150,17 @@
 		E414E8B728C0F82E00C76A9A /* PadeLife */ = {
 			isa = PBXGroup;
 			children = (
-				E4599D6828DF1CF200668A20 /* Extension */,
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
-				E4599D6528DEE7B500668A20 /* ObservableObject */,
-				E4599D5728DEA47C00668A20 /* enum */,
-				E4599D5428DE9B9400668A20 /* Entity */,
 				E4599D5128DE94DD00668A20 /* Common */,
 				E4599D4828DE8D8B00668A20 /* Search */,
 				E4599D4928DE8DA200668A20 /* Dashboard */,
 				E4599D4A28DE8DAB00668A20 /* Account */,
+				E4599D6528DEE7B500668A20 /* ObservableObject */,
+				E4599D5728DEA47C00668A20 /* enum */,
+				E4599D5428DE9B9400668A20 /* Entity */,
+				E4599D6828DF1CF200668A20 /* Extension */,
+				E4599D7728F4448700668A20 /* Modifier */,
 				E414E8BC28C0F82F00C76A9A /* Assets.xcassets */,
 				E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */,
 				E414E8BE28C0F82F00C76A9A /* Preview Content */,
@@ -249,6 +260,8 @@
 			children = (
 				E4599D6628DEE7DA00668A20 /* AuthSubject.swift */,
 				E4599D6B28DF45AC00668A20 /* PadelSubject.swift */,
+				E4599D7528F43CA500668A20 /* AlertSubject.swift */,
+				E4599D7F28F44D2300668A20 /* ToastSubject.swift */,
 			);
 			path = ObservableObject;
 			sourceTree = "<group>";
@@ -259,6 +272,15 @@
 				E4599D6928DF1D1600668A20 /* ViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E4599D7728F4448700668A20 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				E4599D7828F444B100668A20 /* AlertView.swift */,
+				E4599D7D28F4474D00668A20 /* ToastAlertView.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +307,7 @@
 				E44851A928C0FCF8003DE438 /* FirebaseFirestoreSwift */,
 				E44851AB28C0FCF8003DE438 /* FirebaseFunctions */,
 				E44851AD28C0FCF8003DE438 /* FirebaseRemoteConfigSwift */,
+				E4599D7B28F445D000668A20 /* PopupView */,
 			);
 			productName = PadeLife;
 			productReference = E414E8B528C0F82E00C76A9A /* PadeLife.app */;
@@ -360,6 +383,7 @@
 			mainGroup = E414E8AC28C0F82E00C76A9A;
 			packageReferences = (
 				E44851A028C0FCF8003DE438 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E4599D7A28F445D000668A20 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = E414E8B628C0F82E00C76A9A /* Products */;
 			projectDirPath = "";
@@ -405,9 +429,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4599D6428DEDEED00668A20 /* PLUser.swift in Sources */,
+				E4599D7928F444B100668A20 /* AlertView.swift in Sources */,
 				E4599D6228DED4F100668A20 /* RegisterScreen.swift in Sources */,
+				E4599D8028F44D2300668A20 /* ToastSubject.swift in Sources */,
 				E4599D4E28DE8DF000668A20 /* DashboardScreen.swift in Sources */,
 				E4599D6C28DF45AC00668A20 /* PadelSubject.swift in Sources */,
+				E4599D7E28F4474D00668A20 /* ToastAlertView.swift in Sources */,
 				E4599D5928DEA4A100668A20 /* PadelLevel.swift in Sources */,
 				E4599D5028DE8DFB00668A20 /* SearchScreen.swift in Sources */,
 				E4599D4C28DE8DE200668A20 /* AccountScreen.swift in Sources */,
@@ -415,6 +442,7 @@
 				E414E8B928C0F82E00C76A9A /* PadeLifeApp.swift in Sources */,
 				E4599D5628DE9BA600668A20 /* PLSchedule.swift in Sources */,
 				E4599D6A28DF1D1600668A20 /* ViewExtension.swift in Sources */,
+				E4599D7628F43CA500668A20 /* AlertSubject.swift in Sources */,
 				E4599D5328DE94FA00668A20 /* ScheduleListItemView.swift in Sources */,
 				E4599D5E28DEC74D00668A20 /* ScheduleListItemDetailView.swift in Sources */,
 				E4599D6028DED4E200668A20 /* LoginScreen.swift in Sources */,
@@ -755,6 +783,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		E4599D7A28F445D000668A20 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -792,6 +828,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E44851A028C0FCF8003DE438 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfigSwift;
+		};
+		E4599D7B28F445D000668A20 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4599D7A28F445D000668A20 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
