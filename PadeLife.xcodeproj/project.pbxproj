@@ -62,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E414E8B528C0F82E00C76A9A /* PadeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PadeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E414E8B528C0F82E00C76A9A /* DebugPadeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugPadeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadeLifeApp.swift; sourceTree = "<group>"; };
 		E414E8BA28C0F82E00C76A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E414E8BC28C0F82F00C76A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +92,7 @@
 		E4599D7828F444B100668A20 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		E4599D7D28F4474D00668A20 /* ToastAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAlertView.swift; sourceTree = "<group>"; };
 		E4599D7F28F44D2300668A20 /* ToastSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastSubject.swift; sourceTree = "<group>"; };
+		E4599D8528F5ABF100668A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +141,7 @@
 		E414E8B628C0F82E00C76A9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E414E8B528C0F82E00C76A9A /* PadeLife.app */,
+				E414E8B528C0F82E00C76A9A /* DebugPadeLife.app */,
 				E414E8C528C0F82F00C76A9A /* PadeLifeTests.xctest */,
 				E414E8CF28C0F82F00C76A9A /* PadeLifeUITests.xctest */,
 			);
@@ -150,6 +151,8 @@
 		E414E8B728C0F82E00C76A9A /* PadeLife */ = {
 			isa = PBXGroup;
 			children = (
+				E4599D8528F5ABF100668A20 /* Info.plist */,
+				E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */,
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
 				E4599D5128DE94DD00668A20 /* Common */,
@@ -162,7 +165,6 @@
 				E4599D6828DF1CF200668A20 /* Extension */,
 				E4599D7728F4448700668A20 /* Modifier */,
 				E414E8BC28C0F82F00C76A9A /* Assets.xcassets */,
-				E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */,
 				E414E8BE28C0F82F00C76A9A /* Preview Content */,
 			);
 			path = PadeLife;
@@ -310,7 +312,7 @@
 				E4599D7B28F445D000668A20 /* PopupView */,
 			);
 			productName = PadeLife;
-			productReference = E414E8B528C0F82E00C76A9A /* PadeLife.app */;
+			productReference = E414E8B528C0F82E00C76A9A /* DebugPadeLife.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E414E8C428C0F82F00C76A9A /* PadeLifeTests */ = {
@@ -489,6 +491,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME_SETTING = "PadeLife-debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_ID_SUFFIX = .debug;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -539,6 +544,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -549,6 +556,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME_SETTING = PadeLife;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -592,6 +602,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -602,7 +614,7 @@
 		E414E8DA28C0F82F00C76A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -610,6 +622,7 @@
 				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PadeLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -620,8 +633,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLife;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshitaka.PadeLife${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "${PRODUCT_NAME_PREFIX}$(TARGET_NAME)";
+				PRODUCT_NAME_PREFIX = Debug;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,7 +645,7 @@
 		E414E8DB28C0F82F00C76A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -639,6 +653,7 @@
 				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PadeLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -649,8 +664,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLife;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshitaka.PadeLife${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "${PRODUCT_NAME_PREFIX}$(TARGET_NAME)";
+				PRODUCT_NAME_PREFIX = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -733,6 +749,140 @@
 			};
 			name = Release;
 		};
+		E4599D8128F5A46C00668A20 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME_SETTING = "PadeLife-Staging";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_ID_SUFFIX = .staging;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		E4599D8228F5A46C00668A20 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PadeLife/Preview Content\"";
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PadeLife/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshitaka.PadeLife${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "${PRODUCT_NAME_PREFIX}$(TARGET_NAME)";
+				PRODUCT_NAME_PREFIX = Staging;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		E4599D8328F5A46C00668A20 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PadeLife.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PadeLife";
+			};
+			name = Staging;
+		};
+		E4599D8428F5A46C00668A20 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.PadeLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PadeLife;
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,6 +890,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E414E8D728C0F82F00C76A9A /* Debug */,
+				E4599D8128F5A46C00668A20 /* Staging */,
 				E414E8D828C0F82F00C76A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -749,6 +900,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E414E8DA28C0F82F00C76A9A /* Debug */,
+				E4599D8228F5A46C00668A20 /* Staging */,
 				E414E8DB28C0F82F00C76A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -758,6 +910,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E414E8DD28C0F82F00C76A9A /* Debug */,
+				E4599D8328F5A46C00668A20 /* Staging */,
 				E414E8DE28C0F82F00C76A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -767,6 +920,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E414E8E028C0F82F00C76A9A /* Debug */,
+				E4599D8428F5A46C00668A20 /* Staging */,
 				E414E8E128C0F82F00C76A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

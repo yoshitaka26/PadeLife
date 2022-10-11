@@ -19,6 +19,7 @@ struct DashboardScreen: View {
         NavigationStack {
             ZStack(alignment: .bottom) {
                 List {
+                    Text(Bundle.main.object(forInfoDictionaryKey: "appNameSetting") as! String)
                     Section("主催") {
                         NavigationLink(value: DashboardDestination.organized) {
                             ScheduleListItemDetailView(plSchedule: mockPLSchedule)
