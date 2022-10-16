@@ -42,6 +42,7 @@
 		E4599D7C28F445D000668A20 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = E4599D7B28F445D000668A20 /* PopupView */; };
 		E4599D7E28F4474D00668A20 /* ToastAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7D28F4474D00668A20 /* ToastAlertView.swift */; };
 		E4599D8028F44D2300668A20 /* ToastSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4599D7F28F44D2300668A20 /* ToastSubject.swift */; };
+		E4599D8728F6360100668A20 /* GoogleService-Info-stg.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4599D8628F6360100668A20 /* GoogleService-Info-stg.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		E4599D7D28F4474D00668A20 /* ToastAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAlertView.swift; sourceTree = "<group>"; };
 		E4599D7F28F44D2300668A20 /* ToastSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastSubject.swift; sourceTree = "<group>"; };
 		E4599D8528F5ABF100668A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E4599D8628F6360100668A20 /* GoogleService-Info-stg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-stg.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				E4599D8528F5ABF100668A20 /* Info.plist */,
 				E448519E28C0FB0F003DE438 /* GoogleService-Info.plist */,
+				E4599D8628F6360100668A20 /* GoogleService-Info-stg.plist */,
 				E414E8B828C0F82E00C76A9A /* PadeLifeApp.swift */,
 				E414E8BA28C0F82E00C76A9A /* ContentView.swift */,
 				E4599D5128DE94DD00668A20 /* Common */,
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E414E8C028C0F82F00C76A9A /* Preview Assets.xcassets in Resources */,
+				E4599D8728F6360100668A20 /* GoogleService-Info-stg.plist in Resources */,
 				E414E8BD28C0F82F00C76A9A /* Assets.xcassets in Resources */,
 				E448519F28C0FB0F003DE438 /* GoogleService-Info.plist in Resources */,
 			);
